@@ -1,6 +1,7 @@
 import {Component} from 'angular2/core'
 
 import {DieThrow} from './dice/roll-dice'
+import {Character, Grundwert, Talentwert} from './character/character'
 
 @Component({
     selector: 'pap-field',
@@ -9,6 +10,7 @@ import {DieThrow} from './dice/roll-dice'
 export class FieldComponent {
     rollDiceInputString: string;
     constructor() {
+        
     }
     ngAfterViewInit() {
         componentHandler.upgradeAllRegistered();
