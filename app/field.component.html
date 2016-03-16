@@ -1,0 +1,55 @@
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--8-col">
+        <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="width:100%">
+            <thead>
+                <tr>
+                    <th class="mdl-data-table__cell--non-numeric">Material</th>
+                    <th>Quantity</th>
+                    <th>Unit price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
+                    <td>25</td>
+                    <td>$2.90</td>
+                </tr>
+                <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
+                    <td>50</td>
+                    <td>$1.25</td>
+                </tr>
+                <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
+                    <td>10</td>
+                    <td>$2.35</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="mdl-cell mdl-cell--4-col">
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp" style="width: 100%; min-height: 0">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Roll the dice</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+                <form action="#">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="roll-dice" #rollDiceInput (keyup)="rollDiceInputString=rollDiceInput.value">
+                        <label class="mdl-textfield__label" for="roll-dice">Dice to roll</label>
+                    </div>
+                </form>
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" (click)="clickRollDice()">
+                    Roll
+                </a>
+            </div>
+            <!--<div class="mdl-card__menu">
+                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                    <i class="material-icons">share</i>
+                </button>
+            </div>-->
+        </div>
+    </div>
+</div>

@@ -23,11 +23,17 @@ coverage
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
-# Dependency directory
+# Dependency directories
 node_modules
+jspm_packages
+typings
 
 # Optional npm cache directory
 .npm
 
 # Optional REPL history
 .node_repl_history
+
+# ts transpiled files
+app/**/*.js
+app/**/*.js.map
